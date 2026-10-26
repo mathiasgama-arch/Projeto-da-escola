@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dio News</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: #000;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background: #c00;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.destaque {
+  background: #222;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.destaque h2 {
+  font-size: 30px;
+}
+
+.secao {
+  margin-top: 30px;
+}
+
+.secao h2 {
+  border-bottom: 3px solid #c00;
+  padding-bottom: 5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: #222;
+  border: 1px solid #444;
+  padding: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #bbb;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destaque h2 {
+    font-size: 24px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <h1>Dio News</h1>
+
+  <p>Notícias do Brasil e do mundo</p>
+
+</header>
+
+<nav>
+
+  <a href="#">Início</a>
+
+  <a href="#brasil">Brasil</a>
+
+  <a href="#mundo">Mundo</a>
+
+  <a href="#economia">Economia</a>
+
+  <a href="#tecnologia">Tecnologia</a>
+
+</nav>
+
+<main>
+
+  <!-- DESTAQUE -->
+
+  <section class="destaque">
+
+    <h2>
+      Governo anuncia novo plano para o transporte público
+    </h2>
+
+    <p>
+      Projeto prevê investimentos em ônibus elétricos
+      e transporte público nas grandes cidades.
+    </p>
+
+    <small>
+      Há 2 horas · Brasil
+    </small>
+
+  </section>
+
+
+  <!-- BRASIL -->
+
+  <section class="secao" id="brasil">
+
+    <h2>Brasil</h2>
+
+    <div class="cards">
+
+      <article class="card">
+
+        <h3>Câmara aprova novo projeto</h3>
+
+        <p>
+          Texto segue agora para o Senado.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Campanha de vacinação é ampliada</h3>
+
+        <p>
+          Postos estarão abertos durante o fim de semana.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Frente fria chega ao Sul</h3>
+
+        <p>
+          Temperaturas devem cair nos próximos dias.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Matrículas em cursos técnicos aumentam</h3>
+
+        <p>
+          Procura por cursos de tecnologia cresce.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- MUNDO -->
+
+  <section class="secao" id="mundo">
+
+    <h2>Mundo</h2>
+
+    <div class="cards">
+
+      <article class="card">
+
+        <h3>Europa anuncia novo acordo</h3>
+
+        <p>
+          Países discutem novas medidas ambientais.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Nova ferrovia é inaugurada</h3>
+
+        <p>
+          Viagem entre duas capitais ficará mais rápida.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Festival reúne países</h3>
+
+        <p>
+          Evento acontece durante esta semana.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>América do Sul anuncia parceria</h3>
+
+        <p>
+          Países assinam acordo de integração.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ECONOMIA -->
+
+  <section class="secao" id="economia">
+
+    <h2>Economia</h2>
+
+    <div class="cards">
+
+      <article class="card">
+
+        <h3>Bolsa fecha em alta</h3>
+
+        <p>
+          Mercado teve um dia positivo.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Desemprego cai</h3>
+
+        <p>
+          Número de empregos aumenta no país.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Alimentos ficam mais baratos</h3>
+
+        <p>
+          Preços apresentam queda.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Safra deve crescer</h3>
+
+        <p>
+          Produção agrícola supera expectativas.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- TECNOLOGIA -->
+
+  <section class="secao" id="tecnologia">
+
+    <h2>Tecnologia</h2>
+
+    <div class="cards">
+
+      <article class="card">
+
+        <h3>IA chega às escolas</h3>
+
+        <p>
+          Escolas começam a testar novas ferramentas.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Como evitar golpes online</h3>
+
+        <p>
+          Veja dicas para proteger suas contas.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Novo jogo brasileiro é lançado</h3>
+
+        <p>
+          Jogo é inspirado no folclore nacional.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>Sonda envia imagens da Lua</h3>
+
+        <p>
+          Missão começou uma nova etapa.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <p>© 2026 Dio News</p>
+
+  <p>
+    Projeto fictício de demonstração.
+  </p>
+
+</footer>
+
+</body>
+</html>
